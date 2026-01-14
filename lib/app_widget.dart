@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_test/app_controller.dart';
+import 'package:flutter_app_test/home_page.dart';
 import 'package:flutter_app_test/login_page.dart';
 
 
@@ -18,7 +19,10 @@ class AppWidget extends StatelessWidget {
             primarySwatch:  Colors.red,
             brightness: AppController.instance.isDarkTheme ? Brightness.dark : Brightness.light
           ),
-          home: LoginPage()
+          routes: {
+            "/": (context) => const LoginPage(),
+            "/home": (context) => const HomePage("Flutter app")
+          }
         );
       }
     );

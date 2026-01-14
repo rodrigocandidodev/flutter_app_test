@@ -47,7 +47,12 @@ class _LoginPageState extends State<LoginPage> {
                 SizedBox(height: 20),
                 ElevatedButton(
                   onPressed: () {
-                    print("Loginlkj");
+                    // Manual navigation
+                    /*Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(builder: (context) => HomePage("Home")),
+                    );*/
+                    // Navigate with named routes
+                    Navigator.of(context).pushReplacementNamed("/home");
                   },
                   child: Text("Login"),
                 ),

@@ -28,8 +28,17 @@ class HomePageState extends State<HomePage> {
           CustomSwitch()
         ],
       ),
-      body: Center(
-        child: CustomSwitch()
+      body: Container(
+        width: double.infinity, // It will get the screen width,
+        height: double.infinity, // It will get the screen height,
+        child: Column( // It creates a column where the children is aligned one under the other
+          mainAxisAlignment: MainAxisAlignment.center, // Align vertically at the center of the screen
+          crossAxisAlignment: CrossAxisAlignment.start, // Align horizontally at the start of the screen
+          children: [
+            Text("Counter: $count"),
+            CustomSwitch()
+          ],
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),

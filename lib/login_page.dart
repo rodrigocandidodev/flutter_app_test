@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_test/home_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -49,9 +48,11 @@ class _LoginPageState extends State<LoginPage> {
                 ElevatedButton(
                   onPressed: () {
                     // Manual navigation
-                    Navigator.of(context).pushReplacement(
+                    /*Navigator.of(context).pushReplacement(
                       MaterialPageRoute(builder: (context) => HomePage("Home")),
-                    );
+                    );*/
+                    // Navigate with named routes
+                    Navigator.of(context).pushReplacementNamed("/home");
                   },
                   child: Text("Login"),
                 ),

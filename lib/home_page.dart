@@ -33,10 +33,32 @@ class HomePageState extends State<HomePage> {
         height: double.infinity, // It will get the screen height,
         child: Column( // It creates a column where the children is aligned one under the other
           mainAxisAlignment: MainAxisAlignment.center, // Align vertically at the center of the screen
-          crossAxisAlignment: CrossAxisAlignment.start, // Align horizontally at the start of the screen
           children: [
             Text("Counter: $count"),
-            CustomSwitch()
+            Container(height: 10),
+            CustomSwitch(),
+            Container(height: 50),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.blue,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.red,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.green,
+                ),
+              ]
+            )
           ],
         ),
       ),

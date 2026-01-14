@@ -31,8 +31,8 @@ class HomePageState extends State<HomePage> {
       body: Container(
         width: double.infinity, // It will get the screen width,
         height: double.infinity, // It will get the screen height,
-        child: Column( // It creates a column where the children is aligned one under the other
-          mainAxisAlignment: MainAxisAlignment.center, // Align vertically at the center of the screen
+        child: ListView(
+          
           children: [
             Text("Counter: $count"),
             Container(height: 10),
@@ -58,7 +58,206 @@ class HomePageState extends State<HomePage> {
                   color: Colors.green,
                 ),
               ]
-            )
+            ),
+            Container(height: 50),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.blue,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.red,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.green,
+                ),
+              ]
+            ),
+            Container(height: 50),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.blue,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.red,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.green,
+                ),
+              ]
+            ),
+            Container(height: 50),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.blue,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.red,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.green,
+                ),
+              ]
+            ),
+            Container(height: 50),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.blue,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.red,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.green,
+                ),
+              ]
+            ),
+            Container(height: 50),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.blue,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.red,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.green,
+                ),
+              ]
+            ),
+            Container(height: 50),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.blue,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.red,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.green,
+                ),
+              ]
+            ),
+            Container(height: 50),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.blue,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.red,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.green,
+                ),
+              ]
+            ),
+            Container(height: 50),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.blue,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.red,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.green,
+                ),
+              ]
+            ),
+            Container(height: 50),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.blue,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.red,
+                ),
+                Container(
+                  width: 50,
+                  height: 50,
+                  color: Colors.green,
+                ),
+              ]
+            ),
+            Container(height: 50),
           ],
         ),
       ),

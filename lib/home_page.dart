@@ -23,15 +23,13 @@ class HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(title)
+        title: Text(title),
+        actions: [
+          CustomSwitch()
+        ],
       ),
       body: Center(
-        child: Switch(
-          value: AppController.instance.isDarkTheme,
-          onChanged: (value) {
-            AppController.instance.changeTheme();
-          }
-        )
+        child: CustomSwitch()
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
@@ -41,6 +39,20 @@ class HomePageState extends State<HomePage> {
           });
         }
       ),
+    );
+  }
+}
+
+class CustomSwitch extends StatelessWidget {
+  const CustomSwitch({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Switch(
+      value: AppController.instance.isDarkTheme,
+      onChanged: (value) {
+        AppController.instance.changeTheme();
+      }
     );
   }
 }

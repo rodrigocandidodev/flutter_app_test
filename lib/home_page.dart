@@ -23,11 +23,16 @@ class HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text(title)
       ),
-      body: Center(
-        child: GestureDetector(
-          child: Text(
-            "Counter: $count",
-            style: TextStyle(fontSize: 20)
+      body: Container(
+        height: 250,
+        width: 250,
+        color: Colors.amber,
+        child: Align( // Use Align to create another single render inside the father container
+          alignment: Alignment.center,
+          child: Container(
+            height: 150,
+            width: 150,
+            color: Colors.blue
           )
         )
       ),
